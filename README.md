@@ -57,7 +57,9 @@ cat  *.hg19.filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H3K27a
 Количество пиков в объединении:     
 merge.hg19 - 107692. 
 
-(Тут будет гистограмма)
+Гистограмма:     
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.H3K27ac_SK-N-SH.merge.hg19.png).    
+
 
 ## Анализ участков вторичной структуры ДНК
 
