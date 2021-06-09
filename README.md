@@ -47,7 +47,7 @@ ENCFF138VUT.hg19 - 66883.
 (Тут расположение относительно аннотированных генов).    
 
 
-Теперь объединяем два отфильтрованных эксперимента с помощью команды:
-cat  *.hg19.filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H3K27ac_SK-N-SH.merge.hg19.bed
+Теперь объединяем два отфильтрованных эксперимента с помощью команды:     
+cat  *.hg19.filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H3K27ac_SK-N-SH.merge.hg19.bed.     
 
 
