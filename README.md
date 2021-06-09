@@ -86,6 +86,9 @@ Homo_all - 42295.
 Гистограмма:       
 ![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.H3K27ac_SK-N-SH.intersect_with_Homo_all.png).    
 
+ 
+(Тут расположение относительно аннотированных генов).
+
 
 Теперь визуализируем все полученные результаты в одной сессии геномного браузера, [ссылка](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A197718725-198468724&hgsid=1124087857_3az0ARxaThJAVNnPUXaAM1OphAwo). 
 
