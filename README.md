@@ -85,3 +85,9 @@ Homo_all - 42295.
 
 
 (Ассоциируем полученные пересечения с ближайшими генами)
+Для того, чтобы ассоциировать пересечения с ближайшими генами воспользуемся скриптом [ChIPpeakAnno.R](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/src/ChIPpeakAnno.R).    
+Файл ассоциаций: [intersect_with_Homo_all.genes.txt](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/data/H3K27ac_SK-N-SH.intersect_with_Homo_all.genes.txt).      
+Файл уникальных генов: [intersect_with_Homo_all.genes_uniq.txt](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/data/H3K27ac_SK-N-SH.intersect_with_Homo_all.genes_uniq.txt).     
+
+Всего ассоциированных генов 11478, из них 7117 уникальных.
+
