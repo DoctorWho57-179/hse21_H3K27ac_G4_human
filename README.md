@@ -50,4 +50,19 @@ ENCFF138VUT.hg19 - 66883.
 Теперь объединяем два отфильтрованных эксперимента с помощью команды:     
 cat  *.hg19.filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H3K27ac_SK-N-SH.merge.hg19.bed.     
 
+Данные проверил, мердж получился корректным. Ссылка на сессию будет позже.
+
+
+## Анализ участков вторичной структуры ДНК
+
+Скачиваю файлы со вторичной структурой(я выбрал G4_seq_Li_K), тк у меня их два, то надо будет их объединить с помощью команды:    
+cat  GSM3003539_Homo_all_w15_th-1_minus.hits.max.K.w50.25.bed GSM3003539_Homo_all_w15_th-1_plus.hits.max.K.w50.25.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  Homo_all.bed.      
+
+Теперь снова с помощью скрипта [draw_hist.R](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/src/draw_hist.R) строим гистограмму.    
+
+Количество пиков в мердже:     
+Homo_all - 428654.    
+
+Гистограмма:       
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.Homo_all.png).    
 
