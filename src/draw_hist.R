@@ -19,3 +19,23 @@ ggplot(bed_df) +
 ggsave(paste0('len_hist.', NAME, '.pdf'), path = PATH)
 
 
+bed_df <- bed_df %>%
+  arrange(-len) %>%
+  filter(len < 5000)
+
+
+
+ggplot(bed_df) +
+  aes(x = len) +
+  geom_histogram() +
+  ggtitle(NAME, subtitle = sprintf('Number of peaks = %s', nrow(bed_df))) +
+  theme_bw()
+ggsave(paste0('filter_peaks.', NAME, '.filtered.hist.pdf'), path = PATH)
+
+
+bed_df %>%
+  select(-len) %>%
+  write.table(file=paste0(PATH, NAME ,'.filtered.bed'),
+              col.names = FALSE, row.names = FALSE, sep = '\t', quote = FALSE)
+
+
