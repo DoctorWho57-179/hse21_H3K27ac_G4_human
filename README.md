@@ -2,18 +2,18 @@
 
 ## Анализ пиков гистоновой метки
 
-У меня разбирается метка H3K27ac и тип клетки SK-N-SH. Ген hg38. Эксперименты ENCFF138VUT и ENCFF188BQP.  
+У меня разбирается метка H3K27ac и тип клетки SK-N-SH. Ген hg38. Эксперименты ENCFF138VUT и ENCFF188BQP.    
 
-Скачиваем данные:  
+Скачиваем данные:    
 wget https://www.encodeproject.org/files/ENCFF188BQP/@@download/ENCFF188BQP.bed.gz.    
 wget https://www.encodeproject.org/files/ENCFF138VUT/@@download/ENCFF138VUT.bed.gz.    
 
-И оставляем первые 5 столбцов(остальные не нужны):  
-cat ENCFF138VUT.bed | cut -f1-5 > "H3K27ac_SK-N-SH.ENCFF138VUT.hg38.bed".   
-cat ENCFF188BQP.bed | cut -f1-5 > "H3K27ac_SK-N-SH.ENCFF188BQP.hg38.bed".    
+И оставляем первые 5 столбцов(остальные не нужны):    
+cat ENCFF138VUT.bed | cut -f1-5 > "H3K27ac_SK-N-SH.ENCFF138VUT.hg38.bed".    
+cat ENCFF188BQP.bed | cut -f1-5 > "H3K27ac_SK-N-SH.ENCFF188BQP.hg38.bed".     
 
-Тк ген 38-ой, а не 19-ый, его нужно сконвертировать. Для конвертации выполняем:  
-wget https://hgdownload.cse.ucsc.edu/goldenpath/hg38/liftOver/hg38ToHg19.over.chain.gz. 
+Тк ген 38-ой, а не 19-ый, его нужно сконвертировать. Для конвертации выполняем:    
+wget https://hgdownload.cse.ucsc.edu/goldenpath/hg38/liftOver/hg38ToHg19.over.chain.gz.    
 liftOver H3K27ac_SK-N-SH.ENCFF138VUT.hg38.bed hg38ToHg19.over.chain.gz H3K27ac_SK-N-SH.ENCFF138VUT.hg19.bed H3K27ac_SK-N-SH.ENCFF138VUT.unmapped.bed.    
 liftOver H3K27ac_SK-N-SH.ENCFF188BQP.hg38.bed hg38ToHg19.over.chain.gz H3K27ac_SK-N-SH.ENCFF188BQP.hg19.bed H3K27ac_SK-N-SH.ENCFF188BQP.unmapped.bed.    
 
