@@ -26,7 +26,10 @@ ENCFF188BQP.hg38 - 109149.
 ENCFF138VUT.hg38 - 69317. 
  
 Гистограммы:
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.H3K27ac_SK-N-SH.ENCFF188BQP.hg19.png)
 ![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.H3K27ac_SK-N-SH.ENCFF138VUT.hg19.png)
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.H3K27ac_SK-N-SH.ENCFF188BQP.hg38.png)
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.H3K27ac_SK-N-SH.ENCFF138VUT.hg38.png)
 
 
 
