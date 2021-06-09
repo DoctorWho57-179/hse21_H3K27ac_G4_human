@@ -66,3 +66,17 @@ Homo_all - 428654.
 Гистограмма:       
 ![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.Homo_all.png).    
 
+(Тут расположение относительно аннотированных генов).   
+
+## Анализ пересечений гистоновой метки и вторичной структуры ДНК
+
+Для начала с помощью такой команды строим пересечение структуры ДНК и гистоновой метки:      
+bedtools intersect  -a Homo_all.bed   -b  H3K27ac_SK-N-SH.merge.hg19.bed  >  H3K27ac_SK-N-SH.intersect_with_Homo_all.bed.     
+
+Снова с помощью скрипта [draw_hist.R](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/src/draw_hist.R) строим гистограмму.  
+Количество пиков в мердже:     
+Homo_all - 42295.   
+
+Гистограмма:       
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.H3K27ac_SK-N-SH.intersect_with_Homo_all.png).    
+
