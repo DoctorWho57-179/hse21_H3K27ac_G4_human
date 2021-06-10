@@ -112,6 +112,6 @@ Homo_all - 42295.
 
 Результаты:
 
-![alt text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/go_statistics.png)
 ![alt text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/go_results.png)
+![alt text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/go_statistics.png)
 
