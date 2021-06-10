@@ -97,7 +97,9 @@ Homo_all - 42295.
 
 Теперь визуализируем все полученные результаты в одной сессии геномного браузера, [ссылка](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A197718725-198468724&hgsid=1124087857_3az0ARxaThJAVNnPUXaAM1OphAwo). 
 
-(Тут нужно 1-2 скрина) 
+Скрины сессии:
+![alt text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/screen1.png)
+![alt text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/screen2.png)
 
 
 Для того, чтобы ассоциировать пересечения с ближайшими генами воспользуемся скриптом [ChIPpeakAnno.R](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/src/ChIPpeakAnno.R).    
