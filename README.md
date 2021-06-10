@@ -108,4 +108,10 @@ Homo_all - 42295.
 
 Всего ассоциированных генов 11478, из них 7117 уникальных.
 
-(тут будет GO анализ)
+В конце делаем [GO](http://pantherdb.org/) анализ.     
+
+Результаты:
+
+![alt text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/go_statistics.png)
+![alt text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/go_results.png)
+
