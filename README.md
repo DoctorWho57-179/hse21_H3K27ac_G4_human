@@ -44,13 +44,21 @@ ENCFF138VUT.hg19 - 66883.
 ![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/filter_peaks.H3K27ac_SK-N-SH.ENCFF138VUT.hg19.filtered.hist.png).   
 
 
-(Тут расположение относительно аннотированных генов).    
+Расположение относительно аннотированных генов:    
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/BQP.png).    
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/VUT.png).    
 
 
 Теперь объединяем два отфильтрованных эксперимента с помощью команды:     
 cat  *.hg19.filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H3K27ac_SK-N-SH.merge.hg19.bed.     
 
-Данные проверил, мердж получился корректным. Ссылка на сессию будет позже.
+Данные проверил, мердж получился корректным. Ссылка на сессию будет дальше в ридми.    
+
+Количество пиков в объединении:     
+merge.hg19 - 107692. 
+
+Гистограмма:     
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.H3K27ac_SK-N-SH.merge.hg19.png).    
 
 
 ## Анализ участков вторичной структуры ДНК
@@ -66,7 +74,9 @@ Homo_all - 428654.
 Гистограмма:       
 ![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.Homo_all.png).    
 
-(Тут расположение относительно аннотированных генов).   
+Расположение относительно аннотированных генов:    
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/all.png).    
+
 
 ## Анализ пересечений гистоновой метки и вторичной структуры ДНК
 
@@ -79,6 +89,10 @@ Homo_all - 42295.
 
 Гистограмма:       
 ![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/len_hist.H3K27ac_SK-N-SH.intersect_with_Homo_all.png).    
+
+
+Расположение относительно аннотированных генов:    
+![alt_text](https://github.com/DoctorWho57-179/hse21_H3K27ac_G4_human/blob/main/images/intersect.png).    
 
 
 Теперь визуализируем все полученные результаты в одной сессии геномного браузера, [ссылка](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr1%3A197718725-198468724&hgsid=1124087857_3az0ARxaThJAVNnPUXaAM1OphAwo). 
